@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Labirint</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+    <h1>Labirint</h1>
+    <div id="mainContainer">
+        <div id="menu">
+            <p class="title">Dimensiune labirint</p>
+
+            <div class="wrap-radio">
+                <label for="dim-small">Mic</label>
+                <input type="radio" id="dim-small" name="dim" value="small" checked>
+            </div>
+
+            <div class="wrap-radio">
+                <label for="dimensiune-medium">Mediu</label>
+                <input type="radio" id="dime-medium" name="dim" value="medium">
+            </div>
+            
+            <div class="wrap-radio">
+                <label for="dim-large">Mare</label>
+                <input type="radio" id="dim-large" name="dim" value="large">
+            </div>
+
+            <p class="title">Viteza</p>
+            <div class="wrap-radio">
+                <label for="1fps">1 fps</label>
+                <input type="radio" id="1fps" name="speed" value="1000">
+            </div>
+
+            <div class="wrap-radio">
+                <label for="2fps">4 fps</label>
+                <input type="radio" id="4fps" name="speed" value="250">
+            </div>
+            
+            <div class="wrap-radio">
+                <label for="1fps">10 fps</label>
+                <input type="radio" id="10fps" name="speed" value="100" checked>
+            </div>
+
+            <div class="wrap-radio">
+                <label for="20fps">20 fps</label>
+                <input type="radio" id="20fps" name="speed" value="50">
+            </div>
+
+            <div id="graphMenuBtn" class="title opener">Optiuni Grafice</div>
+
+            <button id="startBtn" class="start-btn" type="button">Ruleaza</button>
+            <button id="resetBtn" class="reset-btn" type="button">Reseteaza</button>
+
+        </div>
+
+        <div id="right-optionalMenu">
+            <p class="title">Culoare Fundal</p>
+            <div class="wrap-select">
+                <select id="bg-color">
+                    <option value="initial" selected>Initial</option>
+                    <option value="albastru">Albastru</option>
+                    <option value="verde">Verde</option>
+                    <option value="bej">Bej</option>
+                    <option value="transparent">Transparent</option>
+                </select>
+            </div>
+
+            <p class="title">Culoare Grid</p>
+            <div class="wrap-select">
+                <select id="grid-color">
+                    <option value="initial" selected>Initial</option>
+                    <option value="negru">Negru</option>
+                    <option value="rosu">Rosu</option>
+                    <option value="alb">Alb</option>
+                    <option value="maro">Maro</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="mazeContainer">
+            <canvas id="mazeCanvas">
+            </canvas>
+        </div>
+    </div>
+	
+
+	<script type="text/javascript" src="static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+
+#backgroundOverlay {
+    background-color:transparent;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+}
+
+#mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#canvasContainer {
+    display: flex;
+    max-width: 800px;
+    min-width: 200px;
+}
+
+#mazeContainer {
+    visibility: hidden;
+    width: 800px;
+    height: 800px;
+    background-color: #EFEFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas#mazeCanvas {
+    border: 2px solid #616247;
+}
+
+canvas {
+    background-color: #111;
+}
+
+#menu {
+    background-color: #DFD7D5;
+    padding: 10px;
+}
+
+.title {
+    font-size: 21px;
+    margin-top: 10px;
+    width: 100px;
+    text-decoration: underline;
+}
+
+.wrap-radio {
+    width: 90px;
+    font-size: 17px;
+    padding: 6px;
+}
+
+.wrap-radio input {
+    outline: none;
+    cursor: pointer;
+    float: right;
+}
+
+#bg-color,
+#grid-color {
+    margin-top: 10px;
+    height: 27px;
+    width: 90px;
+}
+
+button {
+    display: block;
+    width: 90px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+}
+
+#right-optionalMenu {
+    border: 1px solid darkgray;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: #DFD7D5;
+    visibility: hidden;
+}
+
+.opener {
+    cursor: pointer;
+}
+
+.opener:hover {
+    background-color: #CBC7C8;
+}
+
+.start-btn {
+    background-color: #222;
+}
+
+.reset-btn {
+    background-color: rgb(207, 16, 16);
+}
+
+.reset-btn:hover {
+    background-color: red;
+}
+
+
